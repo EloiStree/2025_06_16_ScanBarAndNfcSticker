@@ -1,7 +1,11 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using UnityEngine.Events;
-public class ScanInputMono_ListenToCharStrokeASCII : MonoBehaviour
+
+
+namespace Eloi.ScanInput {
+
+    public class ScanInputMono_ListenToCharStrokeASCII : MonoBehaviour
 {
     public char m_character = '\0';
     public UnityEvent<char> m_onCharacterInput;
@@ -30,4 +34,6 @@ public class ScanInputMono_ListenToCharStrokeASCII : MonoBehaviour
         m_onCharacterInput?.Invoke(c);
         m_onCharacterInputAsString?.Invoke(c.ToString());
     }
+}
+
 }
