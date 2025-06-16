@@ -1,0 +1,158 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &7863368840185124
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4400145642189104905}
+  - component: {fileID: 6130286992646030377}
+  - component: {fileID: 8744495901329015548}
+  - component: {fileID: 7993922683695915944}
+  m_Layer: 0
+  m_Name: Listen To Char Input Bar NFC
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4400145642189104905
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7863368840185124}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.43132, y: 0, z: -1.78039}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 4108032563706245618}
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6130286992646030377
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7863368840185124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 89c0f5629697e054f9a2ad718aa4b749, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_character: 0
+  m_onCharacterInput:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 7993922683695915944}
+        m_TargetAssemblyTypeName: ScanInputMono_TryToFindKeyboardInjection, Assembly-CSharp
+        m_MethodName: PushIn
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+  m_onCharacterInputAsString:
+    m_PersistentCalls:
+      m_Calls: []
+  m_inputTextForDebug: 
+--- !u!114 &8744495901329015548
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7863368840185124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4ecf8b58e1d815a43a956afe553d61ad, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_inputText: 
+  m_isShiftPressed: 0
+  m_isLeftShiftPressed: 0
+  m_isRightShiftPressed: 0
+  m_isLeftCtrlPressed: 0
+  m_isRightCtrlPressed: 0
+  m_isLeftAltPressed: 0
+  m_isRightAltPressed: 0
+  m_lastKeyPressed: 0
+  m_onInputTextChanged:
+    m_PersistentCalls:
+      m_Calls: []
+--- !u!114 &7993922683695915944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7863368840185124}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c16b1c39e732be4eaa3f59442c003ee, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_lastInjectedTime: 0
+  m_lastInjectedTimeByLineReturn: 0
+  m_lastReceivedCharacter: 0
+  m_typeSpeedTimeout: 0.1
+  m_isWritingSomething: 0
+  m_injectedCharacters: 
+  m_lastInjectedText: 
+  onInjectedText:
+    m_PersistentCalls:
+      m_Calls:
+      - m_Target: {fileID: 8057533838339749873}
+        m_TargetAssemblyTypeName: UnityEngine.Object, UnityEngine
+        m_MethodName: set_name
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+--- !u!1 &8057533838339749873
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4108032563706245618}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4108032563706245618
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8057533838339749873}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 4400145642189104905}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
